@@ -159,7 +159,7 @@ gem 'kaminari', '~> 1.2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'hamlit', '~> 2.15.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Files attachments
-gem 'carrierwave', '~> 1.3' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'carrierwave', '~> 2.2', '>= 2.2.6' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'mini_magick', '~> 4.10.1' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # for backups
