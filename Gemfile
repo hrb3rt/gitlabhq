@@ -65,7 +65,7 @@ gem 'marginalia', '~> 1.11.1' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'declarative_policy', '~> 1.1.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Authentication libraries
-gem 'devise', '~> 4.9.3', feature_category: :system_access
+gem 'devise', '~> 4.9.4', feature_category: :system_access
 gem 'devise-pbkdf2-encryptable', '~> 0.0.0', path: 'vendor/gems/devise-pbkdf2-encryptable' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'bcrypt', '~> 3.1', '>= 3.1.14' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'doorkeeper', '~> 5.6', '>= 5.6.6' # rubocop:todo Gemfile/MissingFeatureCategory
