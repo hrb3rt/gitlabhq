@@ -403,7 +403,7 @@ group :development do
   gem 'rubocop', feature_category: :tooling
   gem 'solargraph', '~> 0.47.2', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 
-  gem 'letter_opener_web', '~> 2.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
+  gem 'letter_opener_web', '~> 3.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
   gem 'lookbook', '~> 2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 
   # Better errors handler
@@ -440,7 +440,7 @@ group :development, :test do
   gem 'spring', '~> 4.1.0' # rubocop:todo Gemfile/MissingFeatureCategory
   gem 'spring-commands-rspec', '~> 1.0.4' # rubocop:todo Gemfile/MissingFeatureCategory
 
-  gem 'gitlab-styles', '~> 11.0.0', require: false # rubocop:todo Gemfile/MissingFeatureCategory
+  gem 'gitlab-styles', '~> 12.0.1', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 
   gem 'haml_lint', '~> 0.53', require: false # rubocop:todo Gemfile/MissingFeatureCategory
   gem 'bundler-audit', '~> 0.9.1', require: false # rubocop:todo Gemfile/MissingFeatureCategory
