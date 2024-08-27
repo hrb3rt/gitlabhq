@@ -197,8 +197,8 @@ gem 'google-apis-sqladmin_v1beta4', '~> 0.41.0' # rubocop:todo Gemfile/MissingFe
 gem 'google-apis-androidpublisher_v3', '~> 0.34.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'googleauth', '~> 1.8.1', feature_category: :shared
-gem 'google-cloud-artifact_registry-v1', '~> 0.11.0', feature_category: :shared
-gem 'google-cloud-compute-v1', '~> 2.6.0', feature_category: :shared
+gem 'google-cloud-artifact_registry-v1', '~> 0.12.0', feature_category: :shared
+gem 'google-cloud-compute-v1', '~> 2.7.0', feature_category: :shared
 
 # Seed data
 gem 'seed-fu', '~> 2.3.7' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -373,7 +373,7 @@ gem 'gitlab-http', path: 'gems/gitlab-http' # rubocop:todo Gemfile/MissingFeatur
 
 gem 'premailer-rails', '~> 1.10.3' # rubocop:todo Gemfile/MissingFeatureCategory
 
-gem 'gitlab-labkit', '~> 0.35.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'gitlab-labkit', '~> 0.35.1' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'thrift', '>= 0.16.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # I18n
@@ -558,10 +558,10 @@ gem 'ssh_data', '~> 1.3' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'spamcheck', '~> 1.3.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Gitaly GRPC protocol definitions
-gem 'gitaly', '~> 16.9.0-rc3', feature_category: :gitaly
+gem 'gitaly', '~> 16.9.0', feature_category: :gitaly
 
 # KAS GRPC protocol definitions
-gem 'kas-grpc', '~> 0.4.0', feature_category: :deployment_management
+gem 'kas-grpc', '~> 0.5.0', feature_category: :deployment_management
 
 gem 'grpc', '~> 1.60.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
