@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": "https://gitlab.com/gitlab-org/gitlab.git",
   "dependencies": {
-    "@pact-foundation/pact": "^9.17.2",
-    "axios": "^0.26.0",
-    "jest": "^27.5.1",
+    "@pact-foundation/pact": "^12.5.0",
+    "axios": "^1.6.8",
+    "jest": "^28.0.0",
     "jest-pact": "^0.9.1",
     "prettier": "^2.5.1"
   },
