@@ -106,7 +106,7 @@ gem 'akismet', '~> 3.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'invisible_captcha', '~> 2.1.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Two-factor authentication
-gem 'devise-two-factor', '~> 4.1.1' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'devise-two-factor', '~> 6.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'rqrcode', '~> 2.0', feature_category: :system_access
 
 gem 'attr_encrypted', '~> 3.2.4', path: 'vendor/gems/attr_encrypted' # rubocop:todo Gemfile/MissingFeatureCategory
