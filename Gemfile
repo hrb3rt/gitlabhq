@@ -377,7 +377,7 @@ gem 'gitlab-labkit', '~> 0.35.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'thrift', '>= 0.16.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # I18n
-gem 'rails-i18n', '~> 7.0', feature_category: :internationalization
+gem 'rails-i18n', '~> 8.0', '>= 8.0.0', feature_category: :internationalization
 gem 'gettext_i18n_rails', '~> 1.11.0', feature_category: :internationalization
 gem 'gettext', '~> 3.3', require: false, group: [:development, :test], feature_category: :internationalization
 
