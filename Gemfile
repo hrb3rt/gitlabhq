@@ -257,7 +257,7 @@ gem 'acts-as-taggable-on', '~> 10.0' # rubocop:todo Gemfile/MissingFeatureCatego
 
 # Background jobs
 gem 'sidekiq', path: 'vendor/gems/sidekiq-7.1.6', require: 'sidekiq' # rubocop:todo Gemfile/MissingFeatureCategory
-gem 'sidekiq-cron', '~> 1.12.0', feature_category: :shared
+gem 'sidekiq-cron', '~> 2.0.0', feature_category: :shared
 gem 'gitlab-sidekiq-fetcher', path: 'vendor/gems/sidekiq-reliable-fetch', require: 'sidekiq-reliable-fetch' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Cron Parser
