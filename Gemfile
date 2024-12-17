@@ -24,7 +24,7 @@ gem 'bundler-checksum', '~> 0.1.0', path: 'vendor/gems/bundler-checksum', requir
 # https://gitlab.com/gitlab-org/gitlab/-/issues/375713
 #
 # See https://docs.gitlab.com/ee/development/gemfile.html#upgrade-rails for guidelines when upgrading Rails
-gem 'rails', '~> 7.0.8' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'rails', '~> 7.0.8', '>= 7.0.8.7' # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'activerecord-gitlab', path: 'gems/activerecord-gitlab' # rubocop:todo Gemfile/MissingFeatureCategory
 
@@ -143,7 +143,7 @@ gem 'rack-cors', '~> 2.0.1', require: 'rack/cors' # rubocop:todo Gemfile/Missing
 # GraphQL API
 gem 'graphql', '~> 2.2.5', feature_category: :api
 gem 'graphql-docs', '~> 4.0.0', group: [:development, :test], feature_category: :api
-gem 'graphiql-rails', '~> 1.8.0', feature_category: :api
+gem 'graphiql-rails', '~> 1.10.0', feature_category: :api
 gem 'apollo_upload_server', '~> 2.1.5', feature_category: :api
 gem 'graphlient', '~> 0.6.0', feature_category: :importers # Used by BulkImport feature (group::import)
 
@@ -197,8 +197,8 @@ gem 'google-apis-sqladmin_v1beta4', '~> 0.41.0' # rubocop:todo Gemfile/MissingFe
 gem 'google-apis-androidpublisher_v3', '~> 0.34.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'googleauth', '~> 1.8.1', feature_category: :shared
-gem 'google-cloud-artifact_registry-v1', '~> 0.11.0', feature_category: :shared
-gem 'google-cloud-compute-v1', '~> 2.6.0', feature_category: :shared
+gem 'google-cloud-artifact_registry-v1', '~> 1.2.0', feature_category: :shared
+gem 'google-cloud-compute-v1', '~> 2.15.0', feature_category: :shared
 
 # Seed data
 gem 'seed-fu', '~> 2.3.7' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -415,7 +415,7 @@ group :development do
 
   gem 'ruby-lsp', "~> 0.13.3", require: false, feature_category: :tooling
 
-  gem 'ruby-lsp-rails', "~> 0.2.8", feature_category: :tooling
+  gem 'ruby-lsp-rails', '~> 0.3.5', feature_category: :tooling
 
   gem 'ruby-lsp-rspec', "~> 0.1.8", require: false, feature_category: :tooling
 end
