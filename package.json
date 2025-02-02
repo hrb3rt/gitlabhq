@@ -107,7 +107,7 @@
     "@tiptap/extension-task-item": "^2.1.14",
     "@tiptap/extension-task-list": "^2.1.14",
     "@tiptap/extension-text": "^2.1.14",
-    "@tiptap/pm": "^2.1.14",
+    "@tiptap/pm": "^2.11.5",
     "@tiptap/suggestion": "^2.1.14",
     "@tiptap/vue-2": "^2.1.14",
     "@vue/apollo-components": "^4.0.0-beta.4",
