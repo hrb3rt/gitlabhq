@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
-    "@babel/core": "^7.23.7",
+    "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.23.7",
     "@cubejs-client/core": "^0.34.37",
     "@cubejs-client/vue": "^0.34.37",
@@ -166,7 +166,7 @@
     "marked-bidi": "^1.0.3",
     "mathjax": "3",
     "mdurl": "^1.0.1",
-    "mermaid": "10.7.0",
+    "mermaid": "11.5.0",
     "micromatch": "^4.0.5",
     "minimatch": "^3.0.4",
     "monaco-editor": "^0.30.1",
