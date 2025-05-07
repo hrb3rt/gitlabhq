@@ -6,7 +6,7 @@ gemspec
 
 gem "rake"
 RAILS_VERSION = "~> 7.0.4"
-gem "actionmailer", RAILS_VERSION
+gem "actionmailer", ">= 7.2.0", RAILS_VERSION
 gem "actionpack", RAILS_VERSION
 gem "activejob", RAILS_VERSION
 gem "activerecord", RAILS_VERSION
