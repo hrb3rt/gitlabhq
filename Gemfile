@@ -24,7 +24,7 @@ gem 'bundler-checksum', '~> 0.1.0', path: 'vendor/gems/bundler-checksum', requir
 # https://gitlab.com/gitlab-org/gitlab/-/issues/375713
 #
 # See https://docs.gitlab.com/ee/development/gemfile.html#upgrade-rails for guidelines when upgrading Rails
-gem 'rails', '~> 7.0.8' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'rails', '~> 7.1.5', '>= 7.1.5.2' # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'activerecord-gitlab', path: 'gems/activerecord-gitlab' # rubocop:todo Gemfile/MissingFeatureCategory
 
@@ -54,7 +54,7 @@ gem 'view_component', '~> 3.8.0' # rubocop:todo Gemfile/MissingFeatureCategory
 # Supported DBs
 gem 'pg', '~> 1.5.4' # rubocop:todo Gemfile/MissingFeatureCategory
 
-gem 'neighbor', '~> 0.2.3' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'neighbor', '~> 0.3.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'rugged', '~> 1.6' # rubocop:todo Gemfile/MissingFeatureCategory
 
@@ -103,7 +103,7 @@ gem 'timfel-krb5-auth', '~> 0.8', group: :kerberos # rubocop:todo Gemfile/Missin
 # Spam and anti-bot protection
 gem 'recaptcha', '~> 5.12', require: 'recaptcha/rails' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'akismet', '~> 3.0' # rubocop:todo Gemfile/MissingFeatureCategory
-gem 'invisible_captcha', '~> 2.1.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'invisible_captcha', '~> 2.2.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Two-factor authentication
 gem 'devise-two-factor', '~> 4.1.1' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -201,7 +201,7 @@ gem 'google-cloud-artifact_registry-v1', '~> 0.11.0', feature_category: :shared
 gem 'google-cloud-compute-v1', '~> 2.6.0', feature_category: :shared
 
 # Seed data
-gem 'seed-fu', '~> 2.3.7' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'seed-fu', '~> 2.3.9' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Search
 gem 'elasticsearch-model', '~> 7.2' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -250,10 +250,10 @@ group :puma do
 end
 
 # State machine
-gem 'state_machines-activerecord', '~> 0.8.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'state_machines-activerecord', '~> 0.9.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # CI domain tags
-gem 'acts-as-taggable-on', '~> 10.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'acts-as-taggable-on', '~> 11.0', '>= 11.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Background jobs
 gem 'sidekiq', path: 'vendor/gems/sidekiq-7.1.6', require: 'sidekiq' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -349,7 +349,7 @@ gem 'terser', '1.0.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'click_house-client', path: 'gems/click_house-client', require: 'click_house/client' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'addressable', '~> 2.8' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'tanuki_emoji', '~> 0.9' # rubocop:todo Gemfile/MissingFeatureCategory
-gem 'gon', '~> 6.4.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'gon', '~> 6.5.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'request_store', '~> 1.5.1' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'base32', '~> 0.3.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
@@ -415,7 +415,7 @@ group :development do
 
   gem 'ruby-lsp', "~> 0.13.3", require: false, feature_category: :tooling
 
-  gem 'ruby-lsp-rails', "~> 0.2.8", feature_category: :tooling
+  gem 'ruby-lsp-rails', '~> 0.2.9', feature_category: :tooling
 
   gem 'ruby-lsp-rspec', "~> 0.1.8", require: false, feature_category: :tooling
 end
@@ -430,7 +430,7 @@ group :development, :test do
 
   gem 'awesome_print', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 
-  gem 'database_cleaner-active_record', '~> 2.1.0', feature_category: :database
+  gem 'database_cleaner-active_record', '~> 2.2.0', feature_category: :database
   gem 'factory_bot_rails', '~> 6.4.3' # rubocop:todo Gemfile/MissingFeatureCategory
   gem 'rspec-rails', '~> 6.1.0', feature_category: :shared
 
@@ -499,7 +499,7 @@ end
 group :test do
   gem 'fuubar', '~> 2.2.0' # rubocop:todo Gemfile/MissingFeatureCategory
   gem 'rspec-retry', '~> 0.6.2', feature_category: :tooling
-  gem 'rspec_profiling', '~> 0.0.6', feature_category: :tooling
+  gem 'rspec_profiling', '~> 0.0.7', feature_category: :tooling
   gem 'rspec-benchmark', '~> 0.6.0', feature_category: :tooling
   gem 'rspec-parameterized', '~> 1.0', require: false, feature_category: :tooling
   gem 'os', '~> 1.1', feature_category: :tooling
@@ -571,7 +571,7 @@ gem 'toml-rb', '~> 2.2.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Feature toggles
 gem 'flipper', '~> 0.26.2' # rubocop:todo Gemfile/MissingFeatureCategory
-gem 'flipper-active_record', '~> 0.26.2' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'flipper-active_record', '~> 0.27.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'flipper-active_support_cache_store', '~> 0.26.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'unleash', '~> 3.2.2' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'gitlab-experiment', '~> 0.9.1', feature_category: :shared
@@ -610,7 +610,7 @@ gem 'lockbox', '~> 1.3.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'valid_email', '~> 0.1' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # JSON
-gem 'jsonb_accessor', '~> 1.3.10' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'jsonb_accessor', '~> 1.4.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'json', '~> 2.6.3' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'json_schemer', '~> 0.2.18' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'oj', '~> 3.13.21' # rubocop:todo Gemfile/MissingFeatureCategory
