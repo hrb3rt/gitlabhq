@@ -129,7 +129,7 @@ gem 'gpgme', '~> 2.0.23' # rubocop:todo Gemfile/MissingFeatureCategory
 # LDAP Auth
 # GitLab fork with several improvements to original library. For full list of changes
 # see https://github.com/intridea/omniauth-ldap/compare/master...gitlabhq:master
-gem 'gitlab_omniauth-ldap', '~> 2.2.0', require: 'omniauth-ldap' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'gitlab_omniauth-ldap', '~> 2.3.0', require: 'omniauth-ldap' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'net-ldap', '~> 0.17.1' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # API
