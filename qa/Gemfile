@@ -7,7 +7,7 @@ gem 'gitlab_quality-test_tooling', '~> 1.11.0', require: false
 gem 'gitlab-utils', path: '../gems/gitlab-utils'
 gem 'activesupport', '~> 7.0.8' # This should stay in sync with the root's Gemfile
 gem 'allure-rspec', '~> 2.23.0'
-gem 'capybara', '~> 3.39.2'
+gem 'capybara', '~> 3.40.0'
 gem 'capybara-screenshot', '~> 1.0.26'
 gem 'rake', '~> 13', '>= 13.1.0'
 gem 'rspec', '~> 3.13'
@@ -29,7 +29,7 @@ gem 'zeitwerk', '~> 2.6', '>= 2.6.12'
 gem 'influxdb-client', '~> 3.0'
 gem 'terminal-table', '~> 3.0.2', require: false
 gem 'slack-notifier', '~> 2.4', require: false
-gem 'fog-google', '~> 1.19', require: false
+gem 'fog-google', '~> 1.20', '>= 1.20.0', require: false
 gem 'fog-core', '2.1.0', require: false # fog-google generates a ton of warnings with latest core
 gem "warning", "~> 1.3"
 
