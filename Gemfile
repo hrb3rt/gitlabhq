@@ -598,7 +598,7 @@ gem 'lru_redux' # rubocop:todo Gemfile/MissingFeatureCategory
 # `config/initializers/mail_starttls_patch.rb` has also been patched to
 # fix STARTTLS handling until https://github.com/mikel/mail/pull/1536 is
 # released.
-gem 'mail', '= 2.8.1' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'mail', '= 2.9.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'mail-smtp_pool', '~> 0.1.0', path: 'vendor/gems/mail-smtp_pool', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 
 gem 'microsoft_graph_mailer', '~> 0.1.0', path: 'vendor/gems/microsoft_graph_mailer' # rubocop:todo Gemfile/MissingFeatureCategory
