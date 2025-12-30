@@ -264,7 +264,7 @@ gem 'gitlab-sidekiq-fetcher', path: 'vendor/gems/sidekiq-reliable-fetch', requir
 gem 'fugit', '~> 1.8.1' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # HTTP requests
-gem 'httparty', '~> 0.21.0' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'httparty', '~> 0.24.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Colored output to console
 gem 'rainbow', '~> 3.0' # rubocop:todo Gemfile/MissingFeatureCategory
@@ -313,7 +313,7 @@ gem 'ruby-fogbugz', '~> 0.3.0', feature_category: :importers
 gem 'kubeclient', '~> 4.11.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # AI
-gem 'ruby-openai', '~> 3.7' # rubocop:todo Gemfile/MissingFeatureCategory
+gem 'ruby-openai', '~> 4.0', '>= 4.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
 gem 'circuitbox', '2.0.0' # rubocop:todo Gemfile/MissingFeatureCategory
 
 # Sanitize user input
@@ -475,7 +475,7 @@ group :development, :test do
 end
 
 group :development, :test, :danger do
-  gem 'gitlab-dangerfiles', '~> 4.6.0', require: false, feature_category: :tooling
+  gem 'gitlab-dangerfiles', '~> 4.7.0', require: false, feature_category: :tooling
 end
 
 group :development, :test, :coverage do
@@ -523,7 +523,7 @@ group :test do
   # Moved in `test` because https://gitlab.com/gitlab-org/gitlab/-/issues/217527
   gem 'derailed_benchmarks', require: false # rubocop:todo Gemfile/MissingFeatureCategory
 
-  gem 'gitlab_quality-test_tooling', '~> 1.14.2', require: false, feature_category: :tooling
+  gem 'gitlab_quality-test_tooling', '~> 1.15.0', require: false, feature_category: :tooling
 end
 
 gem 'octokit', '~> 8.0', feature_category: :importers
