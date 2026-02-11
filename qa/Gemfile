@@ -23,13 +23,13 @@ gem 'rotp', '~> 6.3.0'
 gem 'parallel', '~> 1.24'
 gem 'rainbow', '~> 3.1.1'
 gem 'rspec-parameterized', '~> 1.0.0'
-gem 'octokit', '~> 8.1.0'
-gem "faraday-retry", "~> 2.2"
+gem 'octokit', '~> 9.0.0'
+gem "faraday-retry", "~> 2.2", ">= 2.2.1"
 gem 'zeitwerk', '~> 2.6', '>= 2.6.12'
 gem 'influxdb-client', '~> 3.0'
 gem 'terminal-table', '~> 3.0.2', require: false
 gem 'slack-notifier', '~> 2.4', require: false
-gem 'fog-google', '~> 1.19', require: false
+gem 'fog-google', '~> 1.20', '>= 1.20.0', require: false
 gem 'fog-core', '2.1.0', require: false # fog-google generates a ton of warnings with latest core
 gem "warning", "~> 1.3"
 
